@@ -1,0 +1,91 @@
+import java.util.Scanner;
+
+public class Übungszettel1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+		//Übung 1: 
+		
+		Scanner ü1 = new Scanner(System.in); 
+		
+		System.out.println("The number is: "); 
+		int number = ü1.nextInt();
+	
+		if(number > 1) {
+			for (int i = 2; i <= number; i++) {
+				
+				while (number % i == 0) {
+					System.out.println(i + ", "); 
+					number = number / i; 
+				}
+				
+			}
+		}  else {System.out.println("wtf did you input larry");} 
+		
+		
+		
+		
+		
+		
+		
+		//Übung 2: 
+
+		java.util.Scanner sc = new java.util.Scanner(System.in);
+		System.out.println("Eingabe: ");
+		int k = sc.nextInt(); // liest eine Ganzzahl (int) ein
+		System.out.println(++k); // Ausgabe a)        /* add 1 and print out result and save
+		System.out.println(k); // Ausgabe b)           * you print it out, but it yields the saved one
+		System.out.println(k++); // Ausgabe c)         * you print out k and add 1 and save it. if you were to re-print it, you´d get 0
+		
+		int k2 = 5;
+		double result = 1.0* k2 / 2; // Stelle 1  
+		
+		                                              /*using the automatic recognition tool of java.
+		                                               * Es hätte eigentlich leichter sein können: 
+		                                               * double normal = new Double(result); 
+		                                               */		
+		System.out.println("5 / 2 = " + result); // Ausgabe d)
+		
+		
+		boolean bool = false; //namenänderung von b zu bool
+		if(bool = false) {
+		System.out.println("b ist falsch."); // Ausgabe e)
+		} else {
+		System.out.println("b ist wahr."); // Ausgabe f)  //BC you have not declared a boolean value but a shit
+		}
+		
+		String output = bool? "b ist wahr." : "b ist falsch.";  //sollte eigentlich klappen
+		System.out.println(output);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		//Übung 3: 
+		
+		int a=15;
+		int b=34;
+		int c=1;
+		System.out.println("1: "+ (a==b));           //false, weil a nicht gleich b ist
+		System.out.println("2: "+ (a==b-19));        //true, weil 34 = 15 + 19
+		System.out.println("3: "+ (a^b));            //konvertierung in bits und XOR
+		System.out.println("4: "+ (a++^b));          //same as 3, but a is a + 1 now 
+		System.out.println("5: "+ (7<<++c));         //man verschiebt die binärziffern um ++c stellen und bestimmt den Zahl
+		System.out.println("6: "+ (a=b=c=0x10));     //10 ist hexadezimal, also 2^4 = 16
+		System.out.println("7: "+ (1e1));            //10^1
+		
+		//Übung 4: im Calculator_3
+
+	}
+
+}
